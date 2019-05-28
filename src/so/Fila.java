@@ -25,7 +25,9 @@ public class Fila {
         att_tamanho_fila();
     }
     public Processo obterFila(){
-        return fila.peek();
+        Processo processo = fila.peek();
+        removeFila();
+        return processo;
     }
     public int tamanho_fila(){
         return fila.size();

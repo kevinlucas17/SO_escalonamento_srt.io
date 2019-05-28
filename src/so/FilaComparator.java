@@ -15,7 +15,7 @@ public class FilaComparator implements Comparator<Processo> {
 
     @Override
     public int compare(Processo o1, Processo o2) {
-        if(o1.getTempo_execucao() < o2.getTempo_execucao()){
+        if(o1.getTempo_restante() < o2.getTempo_restante()){
             return -1;
         }
         return 1;

@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package so;
-
 /**
  *
  * @author Kevin
@@ -22,7 +21,7 @@ public class SO {
         Processo p2 = new Processo(9,"p2",2);
         Processo p3 = new Processo(98,"p3",4);
         Processo p4 = new Processo(7,"p4",4);
-        Processo p5 = new Processo(0,"p5",4);
+        Processo p5 = new Processo(1,"p5",4);
         Processo p6 = new Processo(1,"p6",4);
         Processo p7 = new Processo(32,"p7",4);
         Processo p8 = new Processo(17,"p8",4);
@@ -38,9 +37,10 @@ public class SO {
         
        for(int i = 0;i<8;++i){
         System.out.printf("%s", x.obterFila().getNome());
-        x.removeFila();
         System.out.println(" ");
-        }
-    }
+       }
+       System.out.printf("%d", x.getTamanho_fila());
+                         
+       }
     
 }
